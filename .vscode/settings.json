@@ -1,0 +1,14 @@
+{
+    "Lua.diagnostics.globals": [
+        "redstone",
+        "sleep",
+        "term",
+        "rednet",
+        "colors",
+        "multishell"
+    ],
+    "Lua.diagnostics.disable": [
+        "need-check-nil",
+        "undefined-field"
+    ]
+}
