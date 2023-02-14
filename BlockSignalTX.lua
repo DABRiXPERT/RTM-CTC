@@ -1,7 +1,7 @@
 ----------------------------------------------------------
 --                                                      --
 -- Name: Block Signal Transmit & Operate Program        --
--- Version: 23.02.13.Dev1                               --
+-- Version: 23.02.14.Dev2                               --
 --                                                      --
 -- DABRiXPERT, 2023                                     --
 -- R.C.C x TEAM BRiXPERT, 2017-2023                     --
@@ -10,7 +10,7 @@
 
 -- Modem & Route Initialize (Change these variables)
 ModemPos = "top"
-RouteID = {1, 2, 3, 5, 6, 7, 8} -- At least 4 IDs, depend on your signal type
+RouteID = {0, 1, 2, 3, 4, 5, 6, 7} -- At least 4 IDs, depend on your signal type
 Channel = "CTC-Channel"
 BlockName = "Block-"..os.getComputerID()
 
@@ -64,5 +64,8 @@ while true do
     else
         term.setTextColor(colors.lime) print("UNOCCUPIED") term.setTextColor(colors.white)
     end
-    sleep(4) -- Transmit frequency (seconds)
+    sleep(1.5) -- Transmit frequency (seconds), the larger the number is, the slower the signal being transmitted.
+    -- However if the number is too small, it may cause the TPS lower and even cause the map from corrupting.
+    -- DISCLAIMER: ALWAYS REMEMBER TO BACKUP YOUR MAP FILE IN %appdata%/.minecraft/saves/[YOUR MAP NAME]! WE WON'T BE RESPONSIBLE FOR THE CRITICAL ERROR/CORRUPTION OF YOUR MAP!
+
 end
