@@ -2,6 +2,7 @@
 --                                                      --
 -- Name: Block Signal Transmit & Operate Program        --
 -- Version: 23.02.14.Dev2                               --
+-- [Deprecated and will be removed in next version]     --
 --                                                      --
 -- DABRiXPERT, 2023                                     --
 -- R.C.C x TEAM BRiXPERT, 2017-2023                     --
