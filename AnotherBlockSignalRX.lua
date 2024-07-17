@@ -65,7 +65,7 @@ while true do
         term.setTextColor(colors.orange)
         print("Used")
         term.setTextColor(colors.white)
-    elseif id == SecondBlkID and received == chn_name.." Unsed" then
+    elseif id == SecondBlkID and received == chn_name.." Unused" then
         term.setTextColor(colors.lime)
         print("Unused")
         term.setTextColor(colors.white)

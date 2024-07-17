@@ -27,7 +27,7 @@ rednet.host(Channel, BlockName)
 redstone.setAnalogOutput("back", 15)
 sleep(0.05)
 
--- Deteck block occupation
+-- Detect block occupation
 while true do
     -- Check if occupied
     local occupied = redstone.getInput(DetectorInputPos)
